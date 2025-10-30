@@ -17,7 +17,7 @@ function renderDarkMode() {
     $menuItem,
     $menuItemH3,
     $instagram,
-    $menuItemP,
+   $menuItemP,
     $menuItemPrice,
   
     $fotos

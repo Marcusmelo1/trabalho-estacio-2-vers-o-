@@ -148,7 +148,7 @@ a.escolha {
 
   width: 8em ;
   height: 1.5em;
-
+ border-bottom: 4px solid #7f1ac2;
   border-radius: 5px;
   gap: 5px;
   margin: 5px;
@@ -181,7 +181,7 @@ a.escolha {
 .icone_tradução img {
   width: 5em;
   height: 5em;
-   mix-blend-mode: multiply;
+
 }
 
 
