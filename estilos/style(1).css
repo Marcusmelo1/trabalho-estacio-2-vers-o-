@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  transition: background .3s ease-in-out;
+  /* background-color: black; */
+  /*  PRECISO ADICIONAR UMA COR PRETA DIFERENTE PARA O MODO ESCURO  */
+}
+
+.btnDarkMode {
+  min-width: 80px;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: lightGray;
+  color: white;
+  z-index: 1;
+  transition: all ease-in-out .3s;
+}
+
+.circle {
+  min-width: 30px;
+  min-height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.eventBtn {
+  background-color: lightgreen;
+}
+
+.eventBtnCircle {
+  left: 40px;
+}
+
+.hero {
+  height: 80vh;
+  background: url("../imagem/praia.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.619);
+}
+
+.hero-conteudo {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ver-restaurante {
+  background-color: #2d6a4f;
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #24543e;
+}
+
+.ver-restaurante {
+  text-decoration: none;
+}
+
+/*História*/
+
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+#img-historia {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  height: 450px;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+  transition: all ease-in-out .5s;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  text-indent: 0.3em;
+}
+
+/*Restaurantes*/
+.restaurantes {
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+
+.restaurantes h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 1rem;
+  text-align: left;
+}
+
+.nameRestaurant {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2d6a4f;
+}
+
+.infoRestaurant {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2d6a4f;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.card-conteudo a:hover {
+  background: #24543e;
+}
+
+.features {
+  margin: 30px 0;
+  background: #edf9f4;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tittleFeature {
+  margin: 0.5rem 0;
+  color: #2d6a4f;
+}
+
+footer {
+  background-color: #2d6a4f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.black {
+  background-color: #0D0D0D;
+}
+
+.darkModeContrast {
+  background-color: #121212;
+}
+
+.darkModeMainText {
+  color: #EAEAEA;
+}
+
+.darkModeSecondaryText {
+  color: #B3B3B3;
+}
+
+.darkModeBorder {
+  border: #2A2A2A;
+}
+
+.darkVioletText {
+  color: #9B2EC6;
+}
+
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
