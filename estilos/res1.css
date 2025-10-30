@@ -157,14 +157,14 @@ a.escolha {
 
 
 
- #fotos {
+ .fotos {
     background-color: #f0f0f0;
     text-align: center;
     border-radius: 5px;
   }
 
 
-  #fotos img {
+  .fotos img {
     width: 20em;
     height: 20em;
     border-radius: 20px;
@@ -210,5 +210,8 @@ a.escolha {
   color: #9B2EC6;
 }
 
-  
 
+
+.fotos.darkModeContrast {
+    background-color: #141212; 
+}

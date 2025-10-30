@@ -11,47 +11,47 @@ function btnDarkMode() {
 
 function renderDarkMode() {
 
-  const [
-    $body,
-    $info,
-    $menuItem,
-    $menuItemH3,
-    $instagram,
-    $menuItemP,
-    $menuItemPrice,
-
-  ] = [
-    document.querySelector("body"),
-    document.querySelector('.info'),
-    document.querySelectorAll('.menu-item'),
-    document.querySelectorAll('.menu-item-h3'),
-    document.querySelector('.instagram'),
-    document.querySelectorAll('.menu-item-p'),
-    document.querySelectorAll('.price'),
-
-  ]
+  const [
+    $body,
+    $info,
+    $menuItem,
+    $menuItemH3,
+    $instagram,
+    $menuItemP,
+    $menuItemPrice,
   
-  $body.classList.toggle("black")
-  $body.classList.toggle('darkModeSecondaryText')
-  $info.classList.toggle('darkModeContrast')
-  $instagram.classList.toggle('darkModeMainText')
-  $menuItem.forEach(item => {
-    item.classList.toggle('darkModeContrast')
-  })
-  $menuItemH3.forEach(item => {
-    item.classList.toggle('darkVioletText')
-  })
+    $fotos
+  ] = [
+    document.querySelector("body"),
+    document.querySelector('.info'),
+    document.querySelectorAll('.menu-item'),
+    document.querySelectorAll('.menu-item-h3'),
+    document.querySelector('.instagram'),
+    document.querySelectorAll('.menu-item-p'),
+    document.querySelectorAll('.price'),
+    document.querySelectorAll('.fotos'), 
+  ]
+  
+  $body.classList.toggle("black")
+  $body.classList.toggle('darkModeSecondaryText')
+  $info.classList.toggle('darkModeContrast')
+  $instagram.classList.toggle('darkModeMainText')
+  $menuItem.forEach(item => {
+    item.classList.toggle('darkModeContrast')
+  })
+  $menuItemH3.forEach(item => {
+    item.classList.toggle('darkVioletText')
+  })
 
-  $menuItemP.forEach(tag => {
-    tag.classList.toggle('darkModeMainText')
-  })
+  $menuItemP.forEach(tag => {
+    tag.classList.toggle('darkModeMainText')
+  })
 
-  $menuItemPrice.forEach(tag => {
-    tag.classList.toggle('darkModeMainText')
-  })
+  $menuItemPrice.forEach(tag => {
+    tag.classList.toggle('darkModeMainText')
+  })
 
+  $fotos.forEach(tag => { 
+    tag.classList.toggle('darkModeContrast');
+  });
 }
-
-
- 
-
