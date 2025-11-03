@@ -90,6 +90,11 @@ iframe {
   margin: 2rem 0;
 }
 
+#titulo-cardapio{
+  text-align: center;
+   font-size: 2rem;
+
+}
 .menu-item {
   display: flex;
   justify-content: space-between;
@@ -129,29 +134,47 @@ footer {
 }
 
 .nova {
-  text-decoration: none;
+  /*text-decoration: none;
   border: none;
   border-radius: 5px;
   color: white;
   background-color: #4abd89;
   width: 9em;
-  text-align: center;
+  text-align: center;*/
 
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #2d6a4f;
+  position: relative;
+  margin: 40px 0 25px 0;
+  letter-spacing: 1px;
+
+  border-bottom: 2.5px solid #2d6a4f;
+  border-radius: 2px;
 }
+
+
+
+
 
 a.escolha {
   display: inline-block ;
-  background-color: #a248df;
+  background-color: #7c36aa;
   color: white;
   text-decoration: none;
   text-align: center;
 
   width: 8em ;
   height: 1.5em;
- border-bottom: 4px solid #7f1ac2;
+ border-bottom: 4px solid #591189;
   border-radius: 5px;
   gap: 5px;
   margin: 5px;
+
+box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+
 }
 
 
@@ -168,14 +191,14 @@ a.escolha {
     width: 20em;
     height: 20em;
     border-radius: 20px;
-
+    
   
   }
  .icone_tradução {
   position: absolute;
   top: 32em;
   right: 30px;
-  
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .icone_tradução img {
@@ -187,11 +210,11 @@ a.escolha {
 
 
 .black {
-  background-color: #0D0D0D;
+  background-color: #121212;
 }
 
 .darkModeContrast {
-  background-color: #121212;
+  background-color: #202020;
 }
 
 .darkModeMainText {
@@ -215,3 +238,5 @@ a.escolha {
 .fotos.darkModeContrast {
     background-color: #141212; 
 }
+
+
