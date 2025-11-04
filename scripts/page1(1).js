@@ -62,7 +62,7 @@ function atualizarIconeTema() {
     if ($body.classList.contains('black')) {
         imagemTema.src = '../imagem/icone_tradução(1).png';
     } else {
-        imagemTema.src = '../imagem/icone_2.png'; 
+        imagemTema.src = '../imagem/icone_traduçao.png'; 
     }
 }
 
