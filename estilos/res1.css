@@ -203,17 +203,15 @@ box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   border-radius: 4px;
 
 }
-.bebo{
-  position: relative;
-}
 
 
 .idioma{
   position: absolute;
-  font-size: 12px;
-  top: 1.3em;
-  left: 24em;
-  
+  font-size: 13px;
+  right: 10px;
+  margin-top: 60px;
+
+ 
 }
 
 .icone_tradução img {
