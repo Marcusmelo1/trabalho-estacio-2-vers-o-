@@ -196,15 +196,27 @@ box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   }
  .icone_tradução {
   position: absolute;
-  top: 32em;
+  top: 31em;
   right: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  background-color: white;
+  border: 0.3px solid black;
+  border-radius: 4px;
+
+}
+
+.idioma{
+  position: relative; 
+  font-size: 13px;
+  top: 4em;
+  left: 28.5em;
+ 
+  
 }
 
 .icone_tradução img {
-  width: 5em;
-  height: 5em;
-
+  width: 3em;
+  height: 3em;
+  
 }
 
 
